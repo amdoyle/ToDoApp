@@ -74,6 +74,11 @@
       });
     });
 
+    //application ----------------------------------------------------------------
+    app.get('*', function(req, res) {
+      res.sendfile('./public/index.html'); //this is loading the index page (angular will handle the page changes on the front end)
+    });
+
     // listen (start app with node server.js) ======================================
     app.listen(3000);
     console.log("App listening on port 3000");
