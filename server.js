@@ -19,6 +19,11 @@
     app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
     app.use(methodOverride());
 
+    // defin model =============================================================
+    var Todo = congoose.model('Todo', {
+      text : String
+    });
+
     // listen (start app with node server.js) ======================================
     app.listen(3000);
     console.log("App listening on port 3000");
