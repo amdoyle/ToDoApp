@@ -44,7 +44,7 @@
       //create a todo - info will come form AJAX requet form Angular
       Todo.create({
         text : req.body.text,
-        done : flase
+        done : false
       }, function(err, todo) {
         if (err)
           res.send(err)

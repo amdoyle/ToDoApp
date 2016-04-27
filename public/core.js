@@ -1,4 +1,4 @@
-var todo = angular.module('todo', []);
+var appTodo = angular.module('appTodo', []);
 
 function mainController($scope, $http) {
   $scope.formData = {};
