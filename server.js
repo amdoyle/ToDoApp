@@ -63,6 +63,7 @@
         _id : req.params.todo_id
       }, function(err, todo) {
         if (err)
+
           res.send(err);
 
         Todo.find(function(err, todos) {
